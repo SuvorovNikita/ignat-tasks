@@ -1,3 +1,63 @@
-.message {
-
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px 50px;
+    margin: 0 auto;
 }
+
+.message {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    background: #282c34;
+    position: relative;
+    padding: 10px;
+}
+
+.left {
+    border-bottom-left-radius: 0;
+}
+
+.message::after {
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    bottom: 0;
+}
+
+.left::after {
+    left: 0;
+    transform: translateX(-100%);
+    background: radial-gradient(circle at 0 0, transparent, transparent 72%, #282c34 72%);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    color: #b48bb8;
+    text-align: left;
+    font-weight: bold;
+}
+
+.messages {
+    line-height: 1.7;
+    color: #fff;
+    font-size: 14px;
+    width: 100px;
+    margin: 0;
+    text-align: left;
+}
+
+.time {
+    text-align: right;
+    color: #6d7f8f;
+    font-size: 12px;
+}
+
