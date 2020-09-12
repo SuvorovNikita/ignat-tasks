@@ -24,7 +24,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             <button onClick={addUser}>add</button>
             <span>{totalUsers}</span>
             <div>
-                {users.map(u => <p key={u._id}>Name: {u.name}</p>)}
+                {users.map(u => <p key={u._id}>{u.name}</p>)}
             </div>
 
         </div>
